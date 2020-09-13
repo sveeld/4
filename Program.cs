@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApp51
+namespace TestAppConsole
 {
     class Program
     {
@@ -8,30 +8,27 @@ namespace ConsoleApp51
         {
             Console.Title = "TestAppConsole";
 
-            Console.ForegroundColor = ConsoleColor.White;
+            string str1 = "Hello World";
+            string str2 = "HELLO";
+            string str3 = "WORLD";
+            
             Console.BackgroundColor = ConsoleColor.Red;
-            Console.WriteLine("Hello World");
+            Console.WriteLine(str1);
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.BackgroundColor = ConsoleColor.Yellow;
-            Console.Write("HELLO");
+            Console.Write(str2);
 
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.Write(" ");
-            Console.ResetColor();
+            
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("WORLD");
+            Console.WriteLine(str3);
 
             Console.ResetColor();
             Console.Write("App is successed");
 
             Console.ReadLine();
-           /* foreach (var arg in args)
-            {
-                Console.Write(arg);
-                Console.Write(" ");
-            }
-	
-            Console.ReadLine();*/
         }
     }
 }
